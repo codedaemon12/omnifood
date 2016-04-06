@@ -78,6 +78,20 @@ $(document).ready(function(){
             
     });
 
-    
+    /* Maps */
+   var map = new GMaps({
+      div: '.map',
+      lat: 51.5062938,
+      lng: -0.0998578,
+      zoom: 12
+});
+    map.addMarker({
+  lat: 51.5062938,
+  lng: -0.0998578,
+  title: 'London',
+ infoWindow: {
+  content: '<p>Our London HQ</p>'
+}
+});
     
 });
